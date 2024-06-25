@@ -25,9 +25,9 @@ struct InstrumentEditView: View {
             )
 
             HStack {
-                if !catalog.instruments.contains(where: {$0 === instrument}) {
+                if !catalog.contains(instrument) {
                     Button("Save") {
-                        catalog.instruments.append(instrument)
+                        catalog.add(instrument: instrument)
                         dismiss()
                     }
                 }

@@ -11,4 +11,11 @@ import Foundation
 
     var instruments: [Instrument] = []
 
+    func contains(_ instrument: Instrument) -> Bool {
+        return instruments.contains(instrument)
+    }
+
+    func add(instrument: Instrument) {
+        instruments.append(instrument)
+    }
 }
